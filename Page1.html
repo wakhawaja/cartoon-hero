@@ -1,0 +1,60 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta charset=utf-8> 
+	<title>	My Web Page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<script type="text/javascript" src="navigation.js"></script>
+	<script type="text/javascript" src="methods.js"></script>
+</head>
+<body>
+	<H1>
+		JavaScript & JQuery
+	</H1>
+	<H2>
+		Writing to the document Window
+	</H2>
+	<div id='menuBox'>
+	<script>
+		document.write('<p>Hello World!</p>');
+	</script>
+	<p id="demo">click button to change layout of this paragraph</p>
+	<button id="fadeOutBtn">FadeOut</button>
+	<button id="fadeInBtn">FadeIn</button>
+	<button id="fadeToggleBtn">FadeToggle</button>
+	<button onclick="myfunc()">Click Me!</button>
+	</div>
+	<br><br>
+	<div id='saleBox'>
+	<input type="text" id="quantity" name="quantity" placeholder="Quantity">
+	<input type="text" id="price" name="price" placeholder="Price">
+	<button type="button" onclick="calculateTotal2()">Calculate</button>
+	<input type="text" id="total" name="total" placeholder="Toatal Sale is: $--.--">
+	</div>
+	<p id="ptext">Calculation:</p>
+	<script>
+		var saleTotal = calculateTotal(2,16.90);
+		// document.write("<p>Total Sale is: $"+saleTotal+"</p>");
+		$('#ptext').append("<p>Total Sale is: $"+saleTotal+"</p>");
+	</script>
+	<br><br>
+	<div id="container"><div id="errors"><h2>Errors:</h2></div></div>
+	<script>
+	//alert($('#errors').html("Undefined Error"));
+	//$('#errors').html("<p>Four Errors Found</p>");
+	$('#errors').append("<p>Four Errors Found</p>");
+	</script>
+
+	<br><br><br>
+	<div id=answer>
+		<h2 class="question">What is my Name</h2>
+		<p class="answer">Waqas Ahmed Khawaja</p>
+		<h2 class="question">What is DOB</h2>
+		<p class="answer">Dec 12,1989</p>
+		<h2 class="question">What is address</h2>
+		<p class="answer">GWA CANTT</p>
+	</div>
+
+</body >
+</html >

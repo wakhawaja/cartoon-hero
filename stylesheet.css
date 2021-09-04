@@ -1,0 +1,21 @@
+H1{color: black; font: 22;text-align:left;background: green;}
+p{font-style: italic;}
+body{background-position: center; background-color: yellow;}
+div{background-position: center; background-color: yellowgreen;}
+input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      button {
+      background-color: #8ebf42;
+      color: white;
+      width: 100%;
+      padding: 16px 0px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      cursor: grabbing;
+      }
